@@ -1,1 +1,1 @@
-# fb2k-gr
+# GensokyoRadioPanel
