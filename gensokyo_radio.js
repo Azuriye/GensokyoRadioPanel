@@ -1,6 +1,6 @@
-var writeLoopProtection, grImgFilename, imgExtension, grFullImgPath, jsonObj;
+var writeLoopProtection, imgExtension, grFullImgPath, jsonObj;
 var grImgFolder = ""; // Where the stored image gets saved at (e.g. D:\\Music\\Radio Stations\\)
-var tf_filename = fb.TitleFormat("%cover%"); // Using External Tags to read the %cover% field (change it to your preference)
+var grImgFilename = "";  // Set the filename for your image (e.g. Gensokyo Radio)
 var tf_rs = fb.TitleFormat("%radio%"); // Using External Tags to read the %radio% field (change it to your preference)
 
 function on_playback_dynamic_info_track(type) {
@@ -13,7 +13,6 @@ function on_playback_dynamic_info_track(type) {
 	else {
 		var radioStation = tf_rs.EvalWithMetadb(handle);
 		if (radioStation === "Gensokyo Radio") {
-			grImgFilename = tf_filename.EvalWithMetadb(handle).slice(0, -4);
 			fetchGensokyoRadioApi();
 		}
 	}
@@ -30,22 +29,28 @@ function refreshImages() {
 		"artist": jsonObj.SONGINFO.ARTIST,
 		"album" : jsonObj.SONGINFO.ALBUM,
 		"date" : jsonObj.SONGINFO.YEAR,
-		"album artist": jsonObj.SONGINFO.CIRCLE,
-		"cover": grImgFilename + imgExtension
+		"album artist": jsonObj.SONGINFO.CIRCLE
 	};
 	
 	var str = JSON.stringify(obj);
 	var handle_list = fb.CreateHandleList(handle);
 	handle_list.UpdateFileInfoFromJSON(str);
+	handle_list.AttachImage(grFullImgPath, 0);
 	writeLoopProtection = true;
 	window.SetTimeout(function () {
-		handle_list.RunContextCommand("Discord rich presence/Regenerate artwork url")
+		handle_list.RunContextCommand("Discord rich presence/Regenerate artwork url");
 		handle_list.Dispose();
 	}, 5000);
 	
 }
 
 function fetchGensokyoRadioApi() {
+
+	if (grImgFolder.length === 0 || grImgFilename.length === 0) {
+		utils.ShowPopupMessage("Please check if grImgFolder and grImgFilename! are correctly set in the script");
+		return
+	}
+
 	var GET = 0;
 	var url = "https://gensokyoradio.net/api/station/playing/";
 	var user_agent = "foobar2000/jscript-panel3";
