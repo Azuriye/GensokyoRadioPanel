@@ -37,11 +37,7 @@ function refreshImages() {
 	handle_list.UpdateFileInfoFromJSON(str);
 	handle_list.AttachImage(grFullImgPath, 0);
 	writeLoopProtection = true;
-	window.SetTimeout(function () {
-		handle_list.RunContextCommand("Discord rich presence/Regenerate artwork url");
-		handle_list.Dispose();
-	}, 5000);
-	
+	handle_list.Dispose();
 }
 
 function fetchGensokyoRadioApi() {
