@@ -33,7 +33,7 @@ A [JScript Panel 3](https://web.archive.org/web/20241208093147/httpscript-panel.
    var tf_rs = fb.TitleFormat("%radio%");
    ```
 6. **Add a custom tag for the radio station:**  
-   - Shift + Right-click the **Gensokyo Radio** station entry → **Edit External Tags**  
+   - Shift + Right-click the **Gensokyo Radio** entry → **Edit External Tags**  
    - Under the **Metadata** tab, click **+ Add New**  
    - Add a field named `Radio` (or the name used in `var tf_rs`) with the exact value:  
      ```
