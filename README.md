@@ -43,3 +43,9 @@ A [JScript Panel 3](https://web.archive.org/web/20241208093147/httpscript-panel.
    - Shift + Right-click the **Gensokyo Radio** entry → **Wrap for External Tags**  
    - This ensures album art is pulled correctly for the radio station.  
 8. Play the **Gensokyo Radio** station as normal and enjoy!
+
+---
+
+## 🖼️ Demo
+
+![Gensokyo Radio Panel Demo](examples/demo.gif)
