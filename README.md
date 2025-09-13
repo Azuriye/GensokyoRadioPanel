@@ -54,6 +54,7 @@ A [JScript Panel 3](https://web.archive.org/web/20241208093147/httpscript-panel.
 
 ## 📝 Credits & Acknowledgements
 
+- **Touhou Project** – Original music composed by **ZUN** of [Team Shanghai Alice](https://en.wikipedia.org/wiki/Team_Shanghai_Alice).
 - **Gensokyo Radio** – Name, branding, and APIs used in this script remain the property of [LunarSpotlight Media](https://gensokyoradio.net/). APIs are used with permission for this project.  
 - **Foobar2000** – Music player used as the platform for this panel. See [foobar2000 official site](https://www.foobar2000.org/) for licensing and credits.  
 - **External Tags** – Metadata management component for foobar2000, created by [Case](https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Components/External_Tags_(foo_external_tags)).
