@@ -43,7 +43,7 @@ function refreshImages() {
 function fetchGensokyoRadioApi() {
 
 	if (grImgFolder.length === 0 || grImgFilename.length === 0) {
-		utils.ShowPopupMessage("Please check if grImgFolder and grImgFilename! are correctly set in the script");
+		utils.ShowPopupMessage("Please check if grImgFolder and grImgFilename are correctly set in the script!");
 		return
 	}
 
