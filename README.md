@@ -59,6 +59,6 @@ A [JScript Panel 3](https://web.archive.org/web/20241208093147/httpscript-panel.
 - **Foobar2000** – Music player used as the platform for this panel. See [foobar2000 official site](https://www.foobar2000.org/) for licensing and credits.  
 - **External Tags** – Metadata management component for foobar2000, created by [Case](https://wiki.hydrogenaudio.org/index.php?title=Foobar2000:Components/External_Tags_(foo_external_tags)).
 - **JScript Panel 3** – Scripting environment for foobar2000 panels, created by [marc2k3](https://web.archive.org/web/20241208093147/https://jscript-panel.github.io/).  
-- **Theme & Visual Inspiration** – Designed with reference to popular Foobar2000 JScript Panel 3 setups and personal customization.  
+- **Theme & Visual Inspiration** – Design inspired by a dark-mode foobar2000 setup created by [griff_xddx](https://www.reddit.com/r/foobar2000/comments/ogs88y/my_dark_mode_foobar_theme/).
 
 > This project is released under the MIT License. For licensing questions, permissions, or inquiries about usage, please contact me directly. This section aims to give proper credit but does not constitute legal advice.
