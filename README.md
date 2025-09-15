@@ -1,4 +1,4 @@
-# Gensokyo Radio Panel
+# GensokyoRadioPanel
 
 A [JScript Panel 3](https://web.archive.org/web/20241208093147/httpscript-panel.github.io/) script for [foobar2000](https://foobar2000.org/) that fetches the currently playing song from [Gensokyo Radio](https://gensokyoradio.net/) and updates metadata/artwork in your player.
 
